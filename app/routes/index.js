@@ -2,6 +2,6 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(){
-    return stories;
-  }
+    return this.store.findAll('story');
+  },
 });
