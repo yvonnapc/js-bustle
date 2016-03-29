@@ -3,7 +3,7 @@
 
 <ul>
   {{#each model as |story|}}
-  <li>{{story.author}} {{story.headline}}</li>
+    {{story-tile story=story}}
   {{/each}}
 </ul>
 <h3>{{#link-to 'contact'}}Contact{{/link-to}}</h3>

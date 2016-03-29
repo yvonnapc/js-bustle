@@ -1,1 +1,7 @@
-{{yield}}
+<li>"{{story.headline}}" By: {{story.author}}
+  {{#if isImageShowing}}
+    <p><img src={{story.image}} alt={{story.headline}}></p>
+  {{else}}
+    <button>Show Image</button>
+  {{/if}}
+</li>
