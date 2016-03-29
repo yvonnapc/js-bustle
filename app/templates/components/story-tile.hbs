@@ -2,7 +2,8 @@
   {{#if isImageShowing}}
     <p><img src={{story.image}} alt={{story.headline}} {{action 'imageHide'}}></p>
   {{else}}
-    <button {{action 'imageShow'}}>Show Image</button>
+    <button class="btn btn-info" {{action 'imageShow'}}>Show Image</button>
   {{/if}}
-  <button {{action 'delete' story}}>Delete Story</button>
+  {{update-story story=story update="update"}}
+  <button class="btn btn-danger" {{action 'delete' story}}>Delete Story</button>
 </li>
