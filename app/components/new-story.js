@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   addNewStory: false,
   actions: {
-    storyFormShow)(){
+    storyFormShow(){
       this.set('addNewStory', true);
     },
 
