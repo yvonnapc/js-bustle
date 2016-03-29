@@ -18,6 +18,7 @@ JavaScript: Ember Bustle App. This application serves as a platform for the user
        ```$ npm install -g bower ```<br>
        ```$ brew install watchman ```<br>
        ```$ npm install -g ember-cli ```<br>
+       ```$ ember install ember-bootstrap ```<br>
        ```$ ember install emberfire ```<br>
        ```$ ember s ```<br>
 3. Your browser will automatically navigate to the app at: http://localhost:4200
