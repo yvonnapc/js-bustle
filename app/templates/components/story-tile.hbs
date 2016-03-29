@@ -1,9 +1,9 @@
-<li>"{{story.headline}}" By: {{story.author}}
+<li>{{#link-to 'story' story.id}} "{{story.headline}}" By: {{story.author}} {{/link-to}}
   {{#if isImageShowing}}
     <p><img src={{story.image}} alt={{story.headline}} {{action 'imageHide'}}></p>
   {{else}}
     <button class="btn btn-info" {{action 'imageShow'}}>Show Image</button>
   {{/if}}
-  {{update-story story=story update="update"}}
-  <button class="btn btn-danger" {{action 'delete' story}}>Delete Story</button>
+
+
 </li>
